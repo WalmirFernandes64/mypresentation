@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: Arial, sans-serif; /* Fonte mais limpa e moderna */
 }
 
 nav {
@@ -28,4 +29,102 @@ section {
     height: 100vh;
     padding: 20px;
     margin-top: 50px;
+}
+
+
+.container {
+    width: 100%; /* Garante que o contêiner ocupe a largura total */
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: auto; /* Centraliza o contêiner */
+    padding: 20px; /* Preenchimento em torno do conteúdo interno */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura do elemento */
+    display: flex;
+    flex-direction: column; /* Organiza os itens da seção verticalmente */
+}
+
+.section-content {
+    margin-top: 20px; /* Garante espaço suficiente entre as seções */
+    padding: 40px 20px; /* Padding generoso para estética */
+    padding-top: 200px;
+    padding-bottom: 20px; /* Preenchimento na parte inferior da seção */
+    background-color: #f8f8f8; /* Cor de fundo leve */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para destacar a seção */
+}
+.section-content {
+    margin-top: 20px; /* Garante espaço suficiente entre as seções */
+    padding-bottom: 20px; /* Preenchimento na parte inferior da seção */
+}
+
+h2 {
+    color: #333; /* Cor escura para o título para contraste */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center;
+}
+
+p {
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    color: #666; /* Cor suave para o texto para fácil leitura */
+    margin-bottom: 15px; /* Espaço entre parágrafos */
+    text-align: left;
+}
+
+.main-header {
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+    background-color: #f0f0f0; /* Cor de fundo leve para o cabeçalho */
+    color: #333; /* Cor do texto */
+}
+
+.main-header h1 {
+    font-size: 2.5em; /* Tamanho grande para o nome */
+    margin: 0.5em 0; /* Espaço acima e abaixo do nome */
+    color: #1a1a1a; /* Cor do texto para o nome */
+}
+
+.main-header .subtitle {
+    font-size: 1.2em; /* Tamanho menor para o subtítulo */
+    color: #666; /* Cor mais suave para o subtítulo */
+    font-style: italic; /* Itálico para o subtítulo */
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #0056b3; /* Barra lateral para destaque */
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.experience-item {
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada item de experiência */
+    clear: both; /* Limpa os floats anteriores, se houver */
+}
+
+.experience-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #666;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Menos padding em telas pequenas */
+    }
+    p {
+        text-align: justify; /* Justificado em telas mais largas */
+    }
+
+    .main-header h1 {
+        font-size: 2em; /* Tamanho um pouco menor em dispositivos móveis */
+    }
+    .main-header .subtitle {
+        font-size: 1em; /* Tamanho menor para o subtítulo em dispositivos móveis */
+    }
 }

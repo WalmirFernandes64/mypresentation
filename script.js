@@ -1,7 +1,11 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const offsetTop = document.querySelector(this.getAttribute('href')).offsetTop;
+        const headerHeight = document.querySelector('header').offsetHeight; // Altura do cabeçalho
+
+        window.scrollTo({
+            top: offsetTop - headerHeight, // Ajusta a posição de rolagem
             behavior: 'smooth'
         });
     });
